@@ -1,0 +1,10 @@
+playwright>=1.43.0
+crewai>=0.10.0
+anthropic
+openai>=1.0.0
+google-generativeai
+pytest>=7.0.0
+python-dotenv
+requests
+beautifulsoup4
+PyYAML
