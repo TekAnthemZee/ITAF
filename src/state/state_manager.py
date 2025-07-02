@@ -53,7 +53,7 @@ class StateManager:
         
         return page_name or "homepage"
     
-    def add_page(self, url: str, page_data: Dict):
+    def add_page(self, url: str, page_data: Dict) -> str:
         """Add page to state tracking"""
         page_map = self._load_json(self.page_map_file)
         page_name = self._url_to_page_name(url)
@@ -70,6 +70,8 @@ class StateManager:
         
         # Create Test_Pages folder structure
         self._create_page_folder(page_name, url, page_data)
+        
+        return page_name  # Return page_name for further processing
     
     def _create_page_folder(self, page_name: str, url: str, page_data: Dict):
         """Create Test_Pages folder structure for this page"""
@@ -97,3 +99,19 @@ class StateManager:
         """List all tracked pages"""
         page_map = self._load_json(self.page_map_file)
         return page_map.get("pages", {})
+    
+    def save_ui_analysis(self, page_name: str, ui_analysis: Dict):
+        """Save UI analysis results to page folder"""
+        page_folder = Path("Test_Pages") / page_name
+        elements_file = page_folder / f"{page_name}_elements.json"
+        
+        with open(elements_file, 'w') as f:
+            json.dump(ui_analysis, f, indent=2)
+    
+    def update_page_status(self, url: str, status: str):
+        """Update page processing status"""
+        page_map = self._load_json(self.page_map_file)
+        if url in page_map.get("pages", {}):
+            page_map["pages"][url]["status"] = status
+            page_map["last_updated"] = datetime.now().isoformat()
+            self._save_json(self.page_map_file, page_map)

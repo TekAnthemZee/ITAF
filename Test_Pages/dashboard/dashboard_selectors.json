@@ -1,0 +1,1268 @@
+{
+  "element_0_image": {
+    "element_data": {
+      "type": "image",
+      "text": "TekAnthem",
+      "purpose": "Displays the company logo for branding.",
+      "selector_strategy": "xpath: //img[contains(@alt, 'TekAnthem')]",
+      "critical": false,
+      "behavior": "none",
+      "position": "top-right",
+      "attributes": {
+        "alt": "TekAnthem"
+      },
+      "section": "Login Form"
+    },
+    "selectors": [
+      {
+        "strategy": "text",
+        "selector": "text=\"TekAnthem\"",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "Playwright exact text selector"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//image[normalize-space(text())=\"TekAnthem\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "XPath with normalized text"
+      },
+      {
+        "strategy": "text",
+        "selector": "role=generic[name=\"TekAnthem\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Playwright role selector with name"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "header >> text=\"TekAnthem\", nav >> text=\"TekAnthem\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Header/nav context with text"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "[aria-label=\"TekAnthem\"], [title=\"TekAnthem\"], text=\"TekAnthem\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Accessibility attributes or text"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"TekAnthem...\"",
+        "confidence": 0.7,
+        "priority": 3,
+        "description": "Playwright partial text selector"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "image:has-text(\"TekAnthem\"), [data-testid*=\"tekanthem\"], #tekanthem",
+        "confidence": 0.6,
+        "priority": 4,
+        "description": "Hybrid: Multiple fallback approaches"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//image[1]",
+        "confidence": 0.4,
+        "priority": 6,
+        "description": "XPath first image element"
+      },
+      {
+        "strategy": "css",
+        "selector": "image",
+        "confidence": 0.3,
+        "priority": 8,
+        "description": "CSS by element type only"
+      }
+    ]
+  },
+  "element_1_text": {
+    "element_data": {
+      "type": "text",
+      "text": "Log in",
+      "purpose": "Header for the login form, indicating the action to be performed.",
+      "selector_strategy": "text: Log in",
+      "critical": false,
+      "behavior": "none",
+      "position": "middle-right",
+      "attributes": {},
+      "section": "Login Form"
+    },
+    "selectors": [
+      {
+        "strategy": "text",
+        "selector": "text=\"Log in\"",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "Playwright exact text selector"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//text[normalize-space(text())=\"Log in\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "XPath with normalized text"
+      },
+      {
+        "strategy": "text",
+        "selector": "role=generic[name=\"Log in\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Playwright role selector with name"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "[aria-label=\"Log in\"], [title=\"Log in\"], text=\"Log in\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Accessibility attributes or text"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Log in...\"",
+        "confidence": 0.7,
+        "priority": 3,
+        "description": "Playwright partial text selector"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "text:has-text(\"Log in\"), [data-testid*=\"log in\"], #log-in",
+        "confidence": 0.6,
+        "priority": 4,
+        "description": "Hybrid: Multiple fallback approaches"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//text[1]",
+        "confidence": 0.4,
+        "priority": 6,
+        "description": "XPath first text element"
+      },
+      {
+        "strategy": "css",
+        "selector": "text",
+        "confidence": 0.3,
+        "priority": 8,
+        "description": "CSS by element type only"
+      }
+    ]
+  },
+  "element_2_text": {
+    "element_data": {
+      "type": "text",
+      "text": "Please login to continue to your account.",
+      "purpose": "Provides instructions to the user.",
+      "selector_strategy": "text: Please login to continue to your account.",
+      "critical": false,
+      "behavior": "none",
+      "position": "middle-right",
+      "attributes": {},
+      "section": "Login Form"
+    },
+    "selectors": [
+      {
+        "strategy": "text",
+        "selector": "text=\"Please login to continue to your account.\"",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "Playwright exact text selector"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//text[normalize-space(text())=\"Please login to continue to your account.\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "XPath with normalized text"
+      },
+      {
+        "strategy": "text",
+        "selector": "role=generic[name=\"Please login to continue to your account.\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Playwright role selector with name"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "[aria-label=\"Please login to continue to your account.\"], [title=\"Please login to continue to your account.\"], text=\"Please login to continue to your account.\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Accessibility attributes or text"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=/sign.?in|login/i",
+        "confidence": 0.75,
+        "priority": 3,
+        "description": "Text pattern for sign in/login"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Please log...\"",
+        "confidence": 0.7,
+        "priority": 3,
+        "description": "Playwright partial text selector"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "text:has-text(\"Please login to continue to your account.\"), [data-testid*=\"please login to continue to your account.\"], #please-login-to-continue-to-your-account.",
+        "confidence": 0.6,
+        "priority": 4,
+        "description": "Hybrid: Multiple fallback approaches"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//text[1]",
+        "confidence": 0.4,
+        "priority": 6,
+        "description": "XPath first text element"
+      },
+      {
+        "strategy": "css",
+        "selector": "text",
+        "confidence": 0.3,
+        "priority": 8,
+        "description": "CSS by element type only"
+      }
+    ]
+  },
+  "element_3_label": {
+    "element_data": {
+      "type": "label",
+      "text": "Email Address *",
+      "purpose": "Labels the email address input field and indicates it's a required field.",
+      "selector_strategy": "label: Email Address *",
+      "critical": true,
+      "behavior": "none",
+      "position": "middle-right",
+      "attributes": {
+        "required": "true"
+      },
+      "section": "Login Form"
+    },
+    "selectors": [
+      {
+        "strategy": "text",
+        "selector": "text=\"Email Address *\"",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "Playwright exact text selector"
+      },
+      {
+        "strategy": "css",
+        "selector": "input[type=\"email\"], input[placeholder*=\"email\" i]",
+        "confidence": 0.85,
+        "priority": 2,
+        "description": "CSS by email pattern"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//input[contains(@placeholder, \"email\") or contains(@type, \"email\")]",
+        "confidence": 0.85,
+        "priority": 2,
+        "description": "XPath by email pattern"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//label[normalize-space(text())=\"Email Address *\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "XPath with normalized text"
+      },
+      {
+        "strategy": "text",
+        "selector": "role=generic[name=\"Email Address *\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Playwright role selector with name"
+      },
+      {
+        "strategy": "text",
+        "selector": "input[type=\"email\"], [placeholder*=\"email\" i]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Email input pattern"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "[aria-label=\"Email Address *\"], [title=\"Email Address *\"], text=\"Email Address *\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Accessibility attributes or text"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Email Addr...\"",
+        "confidence": 0.7,
+        "priority": 3,
+        "description": "Playwright partial text selector"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "label:has-text(\"Email Address *\"), [data-testid*=\"email address *\"], #email-address-*",
+        "confidence": 0.6,
+        "priority": 4,
+        "description": "Hybrid: Multiple fallback approaches"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//label[1]",
+        "confidence": 0.4,
+        "priority": 6,
+        "description": "XPath first label element"
+      },
+      {
+        "strategy": "css",
+        "selector": "label",
+        "confidence": 0.3,
+        "priority": 8,
+        "description": "CSS by element type only"
+      }
+    ]
+  },
+  "element_4_input": {
+    "element_data": {
+      "type": "input",
+      "text": "Email Address",
+      "purpose": "Allows user to enter their email address for authentication.",
+      "selector_strategy": "placeholder: Email Address",
+      "critical": true,
+      "behavior": "input",
+      "position": "middle-right",
+      "attributes": {
+        "placeholder": "Email Address",
+        "type": "email"
+      },
+      "section": "Login Form"
+    },
+    "selectors": [
+      {
+        "strategy": "hybrid",
+        "selector": "input[type=\"email\"][placeholder=\"Email Address\"]",
+        "confidence": 0.95,
+        "priority": 1,
+        "description": "Hybrid: Input type + placeholder"
+      },
+      {
+        "strategy": "css",
+        "selector": "input[placeholder=\"Email Address\"]",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "CSS by placeholder attribute"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//input[@placeholder=\"Email Address\"]",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "XPath by placeholder attribute"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Email Address\"",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "Playwright exact text selector"
+      },
+      {
+        "strategy": "text",
+        "selector": "placeholder=\"Email Address\"",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "Playwright placeholder selector"
+      },
+      {
+        "strategy": "css",
+        "selector": "input[type=\"email\"], input[placeholder*=\"email\" i]",
+        "confidence": 0.85,
+        "priority": 2,
+        "description": "CSS by email pattern"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//input[contains(@placeholder, \"email\") or contains(@type, \"email\")]",
+        "confidence": 0.85,
+        "priority": 2,
+        "description": "XPath by email pattern"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "input[type=\"email\" and placeholder*=\"Email\"]",
+        "confidence": 0.85,
+        "priority": 2,
+        "description": "Hybrid: Multiple input attributes"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "form >> input[placeholder*=\"email\" i], form >> input[type=\"email\"]",
+        "confidence": 0.85,
+        "priority": 2,
+        "description": "Hybrid: Form context for email input"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//input[normalize-space(text())=\"Email Address\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "XPath with normalized text"
+      },
+      {
+        "strategy": "text",
+        "selector": "label=\"Email Address\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Playwright label selector"
+      },
+      {
+        "strategy": "text",
+        "selector": "role=textbox[name=\"Email Address\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Playwright role selector with name"
+      },
+      {
+        "strategy": "text",
+        "selector": "input[type=\"email\"], [placeholder*=\"email\" i]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Email input pattern"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "[aria-label=\"Email Address\"], [title=\"Email Address\"], text=\"Email Address\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Accessibility attributes or text"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//input[@type=\"email\"]",
+        "confidence": 0.7,
+        "priority": 3,
+        "description": "XPath by input type"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Email Addr...\"",
+        "confidence": 0.7,
+        "priority": 3,
+        "description": "Playwright partial text selector"
+      },
+      {
+        "strategy": "css",
+        "selector": "input[type=\"email\"]",
+        "confidence": 0.6,
+        "priority": 4,
+        "description": "CSS by input type"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "input:has-text(\"Email Address\"), [data-testid*=\"email address\"], #email-address",
+        "confidence": 0.6,
+        "priority": 4,
+        "description": "Hybrid: Multiple fallback approaches"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//input[1]",
+        "confidence": 0.4,
+        "priority": 6,
+        "description": "XPath first input element"
+      },
+      {
+        "strategy": "css",
+        "selector": "input",
+        "confidence": 0.3,
+        "priority": 8,
+        "description": "CSS by element type only"
+      }
+    ]
+  },
+  "element_5_label": {
+    "element_data": {
+      "type": "label",
+      "text": "Password *",
+      "purpose": "Labels the password input field and indicates it's a required field.",
+      "selector_strategy": "label: Password *",
+      "critical": true,
+      "behavior": "none",
+      "position": "middle-right",
+      "attributes": {
+        "required": "true"
+      },
+      "section": "Login Form"
+    },
+    "selectors": [
+      {
+        "strategy": "text",
+        "selector": "text=\"Password *\"",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "Playwright exact text selector"
+      },
+      {
+        "strategy": "css",
+        "selector": "input[type=\"password\"], input[placeholder*=\"password\" i]",
+        "confidence": 0.85,
+        "priority": 2,
+        "description": "CSS by password pattern"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//input[@type=\"password\" or contains(@placeholder, \"password\")]",
+        "confidence": 0.85,
+        "priority": 2,
+        "description": "XPath by password pattern"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//label[normalize-space(text())=\"Password *\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "XPath with normalized text"
+      },
+      {
+        "strategy": "text",
+        "selector": "role=generic[name=\"Password *\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Playwright role selector with name"
+      },
+      {
+        "strategy": "text",
+        "selector": "input[type=\"password\"], [placeholder*=\"password\" i]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Password input pattern"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "[aria-label=\"Password *\"], [title=\"Password *\"], text=\"Password *\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Accessibility attributes or text"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Password *...\"",
+        "confidence": 0.7,
+        "priority": 3,
+        "description": "Playwright partial text selector"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "label:has-text(\"Password *\"), [data-testid*=\"password *\"], #password-*",
+        "confidence": 0.6,
+        "priority": 4,
+        "description": "Hybrid: Multiple fallback approaches"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//label[1]",
+        "confidence": 0.4,
+        "priority": 6,
+        "description": "XPath first label element"
+      },
+      {
+        "strategy": "css",
+        "selector": "label",
+        "confidence": 0.3,
+        "priority": 8,
+        "description": "CSS by element type only"
+      }
+    ]
+  },
+  "element_6_input": {
+    "element_data": {
+      "type": "input",
+      "text": "********",
+      "purpose": "Allows user to enter their password for authentication.",
+      "selector_strategy": "id: password (likely), name: password",
+      "critical": true,
+      "behavior": "input",
+      "position": "middle-right",
+      "attributes": {
+        "type": "password"
+      },
+      "section": "Login Form"
+    },
+    "selectors": [
+      {
+        "strategy": "text",
+        "selector": "text=\"********\"",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "Playwright exact text selector"
+      },
+      {
+        "strategy": "css",
+        "selector": "input[type=\"password\"], input[placeholder*=\"password\" i]",
+        "confidence": 0.85,
+        "priority": 2,
+        "description": "CSS by password pattern"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//input[@type=\"password\" or contains(@placeholder, \"password\")]",
+        "confidence": 0.85,
+        "priority": 2,
+        "description": "XPath by password pattern"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//input[normalize-space(text())=\"********\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "XPath with normalized text"
+      },
+      {
+        "strategy": "text",
+        "selector": "label=\"********\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Playwright label selector"
+      },
+      {
+        "strategy": "text",
+        "selector": "role=textbox[name=\"********\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Playwright role selector with name"
+      },
+      {
+        "strategy": "text",
+        "selector": "input[type=\"password\"], [placeholder*=\"password\" i]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Password input pattern"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "[aria-label=\"********\"], [title=\"********\"], text=\"********\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Accessibility attributes or text"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//input[@type=\"password\"]",
+        "confidence": 0.7,
+        "priority": 3,
+        "description": "XPath by input type"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"********...\"",
+        "confidence": 0.7,
+        "priority": 3,
+        "description": "Playwright partial text selector"
+      },
+      {
+        "strategy": "css",
+        "selector": "input[type=\"password\"]",
+        "confidence": 0.6,
+        "priority": 4,
+        "description": "CSS by input type"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "input:has-text(\"********\"), [data-testid*=\"********\"], #********",
+        "confidence": 0.6,
+        "priority": 4,
+        "description": "Hybrid: Multiple fallback approaches"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//input[1]",
+        "confidence": 0.4,
+        "priority": 6,
+        "description": "XPath first input element"
+      },
+      {
+        "strategy": "css",
+        "selector": "input",
+        "confidence": 0.3,
+        "priority": 8,
+        "description": "CSS by element type only"
+      }
+    ]
+  },
+  "element_7_icon": {
+    "element_data": {
+      "type": "icon",
+      "text": null,
+      "purpose": "Toggles the visibility of the entered password.",
+      "selector_strategy": "aria-label: Toggle password visibility, xpath: //input[@type='password']/following-sibling::*[1]",
+      "critical": false,
+      "behavior": "click",
+      "position": "middle-right",
+      "attributes": {},
+      "section": "Login Form"
+    },
+    "selectors": []
+  },
+  "element_8_button": {
+    "element_data": {
+      "type": "button",
+      "text": "Sign In",
+      "purpose": "Submits the login form with the provided credentials.",
+      "selector_strategy": "text: Sign In",
+      "critical": true,
+      "behavior": "click",
+      "position": "middle-right",
+      "attributes": {
+        "type": "submit"
+      },
+      "section": "Login Form"
+    },
+    "selectors": [
+      {
+        "strategy": "xpath",
+        "selector": "//button[text()=\"Sign In\"]",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "XPath by exact text content"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Sign In\"",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "Playwright exact text selector"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "button:has-text(\"Sign In\")",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "Hybrid: CSS button with text content"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Sign In\" >> visible=true",
+        "confidence": 0.85,
+        "priority": 2,
+        "description": "Playwright visible text selector"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "form >> button[type=\"submit\"], form >> input[type=\"submit\"]",
+        "confidence": 0.85,
+        "priority": 2,
+        "description": "Hybrid: Form context for submit button"
+      },
+      {
+        "strategy": "css",
+        "selector": "button:contains(\"Sign In\")",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "CSS by element type and text content"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//button[contains(text(), \"Sign In\")]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "XPath by partial text content"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//button[normalize-space(text())=\"Sign In\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "XPath with normalized text"
+      },
+      {
+        "strategy": "text",
+        "selector": "role=button[name=\"Sign In\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Playwright role selector with name"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "[aria-label=\"Sign In\"], [title=\"Sign In\"], text=\"Sign In\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Accessibility attributes or text"
+      },
+      {
+        "strategy": "css",
+        "selector": "button:contains(\"Sign In\")",
+        "confidence": 0.75,
+        "priority": 3,
+        "description": "CSS by button text"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=/sign.?in|login/i",
+        "confidence": 0.75,
+        "priority": 3,
+        "description": "Text pattern for sign in/login"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Sign In...\"",
+        "confidence": 0.7,
+        "priority": 3,
+        "description": "Playwright partial text selector"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "button:has-text(\"Sign In\"), [data-testid*=\"sign in\"], #sign-in",
+        "confidence": 0.6,
+        "priority": 4,
+        "description": "Hybrid: Multiple fallback approaches"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//button[1]",
+        "confidence": 0.4,
+        "priority": 6,
+        "description": "XPath first button element"
+      },
+      {
+        "strategy": "css",
+        "selector": "button",
+        "confidence": 0.3,
+        "priority": 8,
+        "description": "CSS by element type only"
+      }
+    ]
+  },
+  "element_9_text": {
+    "element_data": {
+      "type": "text",
+      "text": "Copyright \u00a9 2024 Tek Antem. All rights reserved.",
+      "purpose": "Displays copyright information.",
+      "selector_strategy": "text: Copyright \u00a9 2024 Tek Antem. All rights reserved.",
+      "critical": false,
+      "behavior": "none",
+      "position": "bottom-right",
+      "attributes": {},
+      "section": "Footer"
+    },
+    "selectors": [
+      {
+        "strategy": "text",
+        "selector": "text=\"Copyright \u00a9 2024 Tek Antem. All rights reserved.\"",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "Playwright exact text selector"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//text[normalize-space(text())=\"Copyright \u00a9 2024 Tek Antem. All rights reserved.\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "XPath with normalized text"
+      },
+      {
+        "strategy": "text",
+        "selector": "role=generic[name=\"Copyright \u00a9 2024 Tek Antem. All rights reserved.\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Playwright role selector with name"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "footer >> text=\"Copyright \u00a9 2024 Tek Antem. All rights reserved.\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Footer context with text"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "[aria-label=\"Copyright \u00a9 2024 Tek Antem. All rights reserved.\"], [title=\"Copyright \u00a9 2024 Tek Antem. All rights reserved.\"], text=\"Copyright \u00a9 2024 Tek Antem. All rights reserved.\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Accessibility attributes or text"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Copyright ...\"",
+        "confidence": 0.7,
+        "priority": 3,
+        "description": "Playwright partial text selector"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "text:has-text(\"Copyright \u00a9 2024 Tek Antem. All rights reserved.\"), [data-testid*=\"copyright \u00a9 2024 tek antem. all rights reserved.\"], #copyright-\u00a9-2024-tek-antem.-all-rights-reserved.",
+        "confidence": 0.6,
+        "priority": 4,
+        "description": "Hybrid: Multiple fallback approaches"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//text[1]",
+        "confidence": 0.4,
+        "priority": 6,
+        "description": "XPath first text element"
+      },
+      {
+        "strategy": "css",
+        "selector": "text",
+        "confidence": 0.3,
+        "priority": 8,
+        "description": "CSS by element type only"
+      }
+    ]
+  },
+  "element_10_link": {
+    "element_data": {
+      "type": "link",
+      "text": "Terms of Service",
+      "purpose": "Navigates to the Terms of Service page.",
+      "selector_strategy": "link_text: Terms of Service",
+      "critical": false,
+      "behavior": "click",
+      "position": "bottom-right",
+      "attributes": {},
+      "section": "Footer"
+    },
+    "selectors": [
+      {
+        "strategy": "xpath",
+        "selector": "//link[text()=\"Terms of Service\"]",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "XPath by exact text content"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Terms of Service\"",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "Playwright exact text selector"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Terms of Service\" >> visible=true",
+        "confidence": 0.85,
+        "priority": 2,
+        "description": "Playwright visible text selector"
+      },
+      {
+        "strategy": "css",
+        "selector": "link:contains(\"Terms of Service\")",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "CSS by element type and text content"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//link[contains(text(), \"Terms of Service\")]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "XPath by partial text content"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//link[normalize-space(text())=\"Terms of Service\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "XPath with normalized text"
+      },
+      {
+        "strategy": "text",
+        "selector": "role=link[name=\"Terms of Service\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Playwright role selector with name"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "footer >> text=\"Terms of Service\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Footer context with text"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "[aria-label=\"Terms of Service\"], [title=\"Terms of Service\"], text=\"Terms of Service\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Accessibility attributes or text"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "a:has-text(\"Terms of Service\"), [href*=\"terms-of-service\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Link text or href pattern"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Terms of S...\"",
+        "confidence": 0.7,
+        "priority": 3,
+        "description": "Playwright partial text selector"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "link:has-text(\"Terms of Service\"), [data-testid*=\"terms of service\"], #terms-of-service",
+        "confidence": 0.6,
+        "priority": 4,
+        "description": "Hybrid: Multiple fallback approaches"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//link[1]",
+        "confidence": 0.4,
+        "priority": 6,
+        "description": "XPath first link element"
+      },
+      {
+        "strategy": "css",
+        "selector": "link",
+        "confidence": 0.3,
+        "priority": 8,
+        "description": "CSS by element type only"
+      }
+    ]
+  },
+  "element_11_link": {
+    "element_data": {
+      "type": "link",
+      "text": "Privacy Policy",
+      "purpose": "Navigates to the Privacy Policy page.",
+      "selector_strategy": "link_text: Privacy Policy",
+      "critical": false,
+      "behavior": "click",
+      "position": "bottom-right",
+      "attributes": {},
+      "section": "Footer"
+    },
+    "selectors": [
+      {
+        "strategy": "xpath",
+        "selector": "//link[text()=\"Privacy Policy\"]",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "XPath by exact text content"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Privacy Policy\"",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "Playwright exact text selector"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Privacy Policy\" >> visible=true",
+        "confidence": 0.85,
+        "priority": 2,
+        "description": "Playwright visible text selector"
+      },
+      {
+        "strategy": "css",
+        "selector": "link:contains(\"Privacy Policy\")",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "CSS by element type and text content"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//link[contains(text(), \"Privacy Policy\")]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "XPath by partial text content"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//link[normalize-space(text())=\"Privacy Policy\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "XPath with normalized text"
+      },
+      {
+        "strategy": "text",
+        "selector": "role=link[name=\"Privacy Policy\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Playwright role selector with name"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "footer >> text=\"Privacy Policy\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Footer context with text"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "[aria-label=\"Privacy Policy\"], [title=\"Privacy Policy\"], text=\"Privacy Policy\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Accessibility attributes or text"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "a:has-text(\"Privacy Policy\"), [href*=\"privacy-policy\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Link text or href pattern"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Privacy Po...\"",
+        "confidence": 0.7,
+        "priority": 3,
+        "description": "Playwright partial text selector"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "link:has-text(\"Privacy Policy\"), [data-testid*=\"privacy policy\"], #privacy-policy",
+        "confidence": 0.6,
+        "priority": 4,
+        "description": "Hybrid: Multiple fallback approaches"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//link[1]",
+        "confidence": 0.4,
+        "priority": 6,
+        "description": "XPath first link element"
+      },
+      {
+        "strategy": "css",
+        "selector": "link",
+        "confidence": 0.3,
+        "priority": 8,
+        "description": "CSS by element type only"
+      }
+    ]
+  },
+  "element_12_link": {
+    "element_data": {
+      "type": "link",
+      "text": "Help Center",
+      "purpose": "Navigates to the help or support page.",
+      "selector_strategy": "link_text: Help Center",
+      "critical": false,
+      "behavior": "click",
+      "position": "bottom-right",
+      "attributes": {},
+      "section": "Footer"
+    },
+    "selectors": [
+      {
+        "strategy": "xpath",
+        "selector": "//link[text()=\"Help Center\"]",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "XPath by exact text content"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Help Center\"",
+        "confidence": 0.9,
+        "priority": 1,
+        "description": "Playwright exact text selector"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Help Center\" >> visible=true",
+        "confidence": 0.85,
+        "priority": 2,
+        "description": "Playwright visible text selector"
+      },
+      {
+        "strategy": "css",
+        "selector": "link:contains(\"Help Center\")",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "CSS by element type and text content"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//link[contains(text(), \"Help Center\")]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "XPath by partial text content"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//link[normalize-space(text())=\"Help Center\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "XPath with normalized text"
+      },
+      {
+        "strategy": "text",
+        "selector": "role=link[name=\"Help Center\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Playwright role selector with name"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "footer >> text=\"Help Center\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Footer context with text"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "[aria-label=\"Help Center\"], [title=\"Help Center\"], text=\"Help Center\"",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Accessibility attributes or text"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "a:has-text(\"Help Center\"), [href*=\"help-center\"]",
+        "confidence": 0.8,
+        "priority": 2,
+        "description": "Hybrid: Link text or href pattern"
+      },
+      {
+        "strategy": "text",
+        "selector": "text=\"Help Cente...\"",
+        "confidence": 0.7,
+        "priority": 3,
+        "description": "Playwright partial text selector"
+      },
+      {
+        "strategy": "hybrid",
+        "selector": "link:has-text(\"Help Center\"), [data-testid*=\"help center\"], #help-center",
+        "confidence": 0.6,
+        "priority": 4,
+        "description": "Hybrid: Multiple fallback approaches"
+      },
+      {
+        "strategy": "xpath",
+        "selector": "//link[1]",
+        "confidence": 0.4,
+        "priority": 6,
+        "description": "XPath first link element"
+      },
+      {
+        "strategy": "css",
+        "selector": "link",
+        "confidence": 0.3,
+        "priority": 8,
+        "description": "CSS by element type only"
+      }
+    ]
+  },
+  "element_13_image": {
+    "element_data": {
+      "type": "image",
+      "text": null,
+      "purpose": "Decorative background image.",
+      "selector_strategy": "class: (e.g., 'decorative-image-panel')",
+      "critical": false,
+      "behavior": "none",
+      "position": "left",
+      "attributes": {
+        "role": "presentation"
+      },
+      "section": "Image Panel"
+    },
+    "selectors": []
+  }
+}

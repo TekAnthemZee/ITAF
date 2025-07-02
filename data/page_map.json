@@ -2,11 +2,11 @@
   "pages": {
     "http://3.218.234.95:6060/dashboard": {
       "page_name": "dashboard",
-      "screenshot_path": "reports\\screenshots\\3_218_234_95:6060_dashboard_20250701_165117.png",
-      "discovered_at": "2025-07-01T16:51:18.466494",
+      "screenshot_path": "reports\\screenshots\\3_218_234_95_6060_dashboard_20250702_144556.png",
+      "discovered_at": "2025-07-02T14:45:57.336361",
       "status": "captured"
     }
   },
   "created_at": "2025-07-01T16:49:42.070570",
-  "last_updated": "2025-07-01T16:51:18.466494"
+  "last_updated": "2025-07-02T14:45:57.336361"
 }

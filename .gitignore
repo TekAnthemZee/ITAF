@@ -70,7 +70,8 @@ instance/
 
 
 logs/
-reports/
+# reports/
+
 # Sphinx documentation
 docs/_build/
 
