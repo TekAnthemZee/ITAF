@@ -8,9 +8,9 @@ class TextStrategy:
         """Generate text-based selectors for an element"""
         selectors = []
         
-        element_type = element_data.get('type', '').lower()
-        text = element_data.get('text', '').strip()
-        attributes = element_data.get('attributes', {})
+        element_type = element_data.get('type', '').lower() if element_data.get('type') else ''
+        text = element_data.get('text', '').strip() if element_data.get('text') else ''
+        attributes = element_data.get('attributes', {}) if element_data.get('attributes') else {}
         
         # Strategy 1: By exact text (Playwright text selector)
         if text:
@@ -31,7 +31,7 @@ class TextStrategy:
                 })
         
         # Strategy 2: By placeholder text (for inputs)
-        placeholder = attributes.get('placeholder', '')
+        placeholder = attributes.get('placeholder', '') if attributes else ''
         if placeholder and element_type == 'input':
             selectors.append({
                 'selector': f'placeholder="{placeholder}"',
@@ -79,7 +79,7 @@ class TextStrategy:
             })
         
         # Strategy 6: Text pattern matching for common UI elements
-        if 'sign in' in text.lower() or 'login' in text.lower():
+        if text and 'sign in' in text.lower() or 'login' in text.lower():
             selectors.append({
                 'selector': 'text=/sign.?in|login/i',
                 'confidence': 0.75,
@@ -87,7 +87,7 @@ class TextStrategy:
                 'description': 'Text pattern for sign in/login'
             })
         
-        if 'submit' in text.lower() or 'send' in text.lower():
+        if text and ('submit' in text.lower() or 'send' in text.lower()):
             selectors.append({
                 'selector': 'text=/submit|send/i',
                 'confidence': 0.7,
@@ -110,6 +110,15 @@ class TextStrategy:
                 'confidence': 0.8,
                 'priority': 2,
                 'description': 'Password input pattern'
+            })
+        
+        # If no selectors generated, provide a basic fallback
+        if not selectors:
+            selectors.append({
+                'selector': 'text=""',
+                'confidence': 0.1,
+                'priority': 10,
+                'description': 'Text selector fallback'
             })
         
         return selectors

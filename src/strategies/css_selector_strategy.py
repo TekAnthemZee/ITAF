@@ -8,9 +8,9 @@ class CSSStrategy:
         """Generate CSS selectors for an element"""
         selectors = []
         
-        element_type = element_data.get('type', '').lower()
-        text = element_data.get('text', '').strip()
-        attributes = element_data.get('attributes', {})
+        element_type = element_data.get('type', '').lower() if element_data.get('type') else ''
+        text = element_data.get('text', '').strip() if element_data.get('text') else ''
+        attributes = element_data.get('attributes', {}) if element_data.get('attributes') else {}
         
         # Strategy 1: By element type and text
         if text and element_type in ['button', 'link', 'a']:
@@ -23,7 +23,7 @@ class CSSStrategy:
         
         # Strategy 2: By input attributes
         if element_type == 'input':
-            placeholder = attributes.get('placeholder', '')
+            placeholder = attributes.get('placeholder', '') if attributes else ''
             if placeholder:
                 selectors.append({
                     'selector': f'input[placeholder="{placeholder}"]',
@@ -33,7 +33,7 @@ class CSSStrategy:
                 })
             
             # By input type
-            input_type = attributes.get('type', 'text')
+            input_type = attributes.get('type', 'text') if attributes else 'text'
             selectors.append({
                 'selector': f'input[type="{input_type}"]',
                 'confidence': 0.6,
@@ -62,12 +62,13 @@ class CSSStrategy:
         if element_type == 'button' and text:
             # Clean text for selector
             clean_text = re.sub(r'[^\w\s]', '', text).strip()
-            selectors.append({
-                'selector': f'button:contains("{clean_text}")',
-                'confidence': 0.75,
-                'priority': 3,
-                'description': 'CSS by button text'
-            })
+            if clean_text:
+                selectors.append({
+                    'selector': f'button:contains("{clean_text}")',
+                    'confidence': 0.75,
+                    'priority': 3,
+                    'description': 'CSS by button text'
+                })
         
         # Strategy 5: Generic fallbacks
         if element_type:
@@ -76,6 +77,15 @@ class CSSStrategy:
                 'confidence': 0.3,
                 'priority': 8,
                 'description': f'CSS by element type only'
+            })
+        
+        # If no selectors generated, provide a basic fallback
+        if not selectors:
+            selectors.append({
+                'selector': '*',
+                'confidence': 0.1,
+                'priority': 10,
+                'description': 'CSS universal fallback'
             })
         
         return selectors

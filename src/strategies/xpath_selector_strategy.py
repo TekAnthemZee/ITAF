@@ -8,9 +8,9 @@ class XPathStrategy:
         """Generate XPath selectors for an element"""
         selectors = []
         
-        element_type = element_data.get('type', '').lower()
-        text = element_data.get('text', '').strip()
-        attributes = element_data.get('attributes', {})
+        element_type = element_data.get('type', '').lower() if element_data.get('type') else ''
+        text = element_data.get('text', '').strip() if element_data.get('text') else ''
+        attributes = element_data.get('attributes', {}) if element_data.get('attributes') else {}
         
         # Strategy 1: By exact text content
         if text and element_type in ['button', 'link', 'a', 'span', 'div']:
@@ -31,7 +31,7 @@ class XPathStrategy:
         
         # Strategy 2: By attributes
         if element_type == 'input':
-            placeholder = attributes.get('placeholder', '')
+            placeholder = attributes.get('placeholder', '') if attributes else ''
             if placeholder:
                 selectors.append({
                     'selector': f'//input[@placeholder="{placeholder}"]',
@@ -40,7 +40,7 @@ class XPathStrategy:
                     'description': 'XPath by placeholder attribute'
                 })
             
-            input_type = attributes.get('type', 'text')
+            input_type = attributes.get('type', 'text') if attributes else 'text'
             selectors.append({
                 'selector': f'//input[@type="{input_type}"]',
                 'confidence': 0.7,
@@ -85,12 +85,21 @@ class XPathStrategy:
             })
         
         # Strategy 6: By aria attributes (accessibility)
-        if 'aria-label' in str(attributes).lower() or 'label' in text.lower():
+        if text and ('aria-label' in str(attributes).lower() or 'label' in text.lower()):
             selectors.append({
                 'selector': f'//*[@aria-label="{text}" or contains(@aria-label, "{text}")]',
                 'confidence': 0.75,
                 'priority': 3,
                 'description': 'XPath by aria-label'
+            })
+        
+        # If no selectors generated, provide a basic fallback
+        if not selectors:
+            selectors.append({
+                'selector': '//*',
+                'confidence': 0.1,
+                'priority': 10,
+                'description': 'XPath universal fallback'
             })
         
         return selectors

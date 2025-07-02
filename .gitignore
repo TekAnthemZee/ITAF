@@ -70,8 +70,8 @@ instance/
 
 
 logs/
-# reports/
-
+reports/
+Test_Pages/
 # Sphinx documentation
 docs/_build/
 
